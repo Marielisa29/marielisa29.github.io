@@ -316,7 +316,44 @@ span {
 }
 
 .heading {
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--main-color);
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
     
+    .heading::after {
+        width: 80px;
+        height: 3px;
+    }
 }
 
 .services-container {
@@ -383,10 +420,8 @@ span {
     }
 }
 
-
-
 /* skills section */
-
+/*
 .skills {
     background: var(--bg-color);
 }
@@ -453,4 +488,141 @@ span {
         margin-top: 5px;
         width: 100%;
     }
+}
+*/
+
+/* skills section */
+
+.skills {
+    background: var(--bg-color);
+}
+
+.skills .container {
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.8rem;
+}
+
+.skills .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    box-shadow: 0 4px 10px var(--main-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .container .bar .info img {
+    max-width: 60px;
+    height: auto;
+}
+
+.skills .container .bar .info span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    font-family: "Poppins";
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 1200px) {
+    .skills .container .row {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skills .container {
+        width: 85%;
+    }
+    .skills .container .row {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills .container {
+        margin: 0;
+        padding: 1.5rem;
+        width: 95%;
+        margin-top: 5px;
+    }
+    
+    .skills .container .row {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+        padding: 1rem 0;
+    }
+    
+    .skills .container .bar .info span {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+    
+    .skills .container .bar .info span {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/* Formation section */
+
+.education {
+    background: var(--second-bg-color);
+}
+
+.education .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education .timeline::after{
+    content: "";
+    position: absolute;
+    width: 6px;
+    background: rgb(64, 90, 64);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -2px;
 }
