@@ -401,6 +401,57 @@ span {
     color: var(--text-color);
 }
 
+
+.project-card .toggle-icon {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.project-card.active .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.project-card .service-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  max-height: 400px;
+}
+
+.project-details {
+  max-height: 0;
+  overflow: hidden;
+  background: #f0ffe5;
+  color: var(--text-color);
+  padding: 0 1.5rem;
+  border-top: 1px solid var(--main-color);
+  border-radius: 0 0 1.5rem 1.5rem;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.project-card.active .project-details {
+  max-height: 500px;
+  padding: 1.5rem;
+}
+
+.service-box {
+  min-height: unset;
+  height: auto;
+}
+
+
+
 @media screen and (max-width: 1200px) {
     .services-container {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
