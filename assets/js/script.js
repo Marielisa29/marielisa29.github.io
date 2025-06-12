@@ -88,3 +88,24 @@ document.addEventListener("DOMContentLoaded", () => {
     slideTo(position);
   });
 });
+
+
+function toggleProjectDetails(element) {
+  const card = element.closest('.project-card');
+  const details = card.querySelector('.project-details');
+  const isVisible = details.style.display === 'block';
+
+  // Fermer tous les autres
+  document.querySelectorAll('.project-card').forEach(c => {
+    c.classList.remove('active');
+    const d = c.querySelector('.project-details');
+    if (d) d.style.display = 'none';
+  });
+
+  // Ouvrir celui cliqué si fermé
+  if (!isVisible) {
+    details.style.display = 'block';
+    card.classList.add('active');
+  }
+}
+
