@@ -50,45 +50,147 @@
             <h2 class="heading">Projets</h2>
 
             <div class="services-container">
-                <div class="service-box">
-                    <div class="service-info">
-                        <h4>S1.01   :   Développer des applications informatiques simples.</h4>
-                        <p></p>
+
+                <div class="service-box project-card">
+                    <div class="service-info" onclick="toggleProjectDetails(this)">
+                        <img src="assets/image/snake_v4.png" alt="Image du projet">
+                        <h4>S1.01 : Développer des applications informatiques simples</h4>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Nature du projet :</h5>
+                        <p>Conception d'un petit jeu snake simple en langage C avec quelques obstacles -> '#' et 10 pommes -> '6' générés aléatoirement, 
+                        ainsi qu'un serpent contrôlé par l'action de touches clavier -> 'z','q','s','d' qui peut traverser les différents portails (chaque centres des côtés du jeu).</p>
+                        <br>
+                        <h5>Objectif :</h5>
+                        <p>Finir le jeu en mangeant un total de 10 pommes sans mourir (sans toucher un pavé ou une bordure)</p>
+                        <br>
+                        <h5>Etapes de conception :</h5>
+                        <p>- Effectuer plusieurs cahiers de tests afin de gérer de potentiels problèmes (compilation, valeurs erronées...) au cours de la conception.</p>
+                        <p>- Réalisation de A-Z d'un programme fonctionnel respectant les consignes données.</p>
+                        <br><br><br><br><br><br><br><br><br>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="service-box project-card">
+                    <div class="service-info" onclick="toggleProjectDetails(this)">
+                        <img src="assets/image/snakeCompa.png" alt="Image du projet">
                         <h4>S1.02   :   Appréhender et construire des algorithmes.</h4>
-                        <p></p>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Nature du projet :</h5>
+                        <p>Continuité du projet S1.01 mais cette fois-ci entièrement automatisé, le serpent se déplace seul en suivant les indications/calculs de son algorithme et les pommes et pavés ont des coordonnées fixes.</p>
+                        <br>
+                        <h5>Objectif :</h5>
+                        <p>Ici on va vouloir générer 2 serpents distincts partant chacun dans une direction opposée, le but étant de voir lequel finit en premier (le chemin le plus optimisé). L'objectif étant à terme de comparer son propre 
+                        algorithme avec celui de quelqu'un d'autre et observer lequel est le plus optimisé (méthode de calculs de direction la plus efficace).</p>
+                        <br>
+                        <h5>Etapes de conception :</h5>
+                        <p>- Même étapes que la S1.01 avec une comparaison d'algorithmes en fin de projet en plus.</p>
+                        <br><br><br><br><br><br><br><br><br>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="service-box project-card">
+                    <div class="service-info" onclick="toggleProjectDetails(this)">
+                        <img src="assets/image/install.png" alt="Image du projet">
                         <h4>S1.03   :   Installer et configurer un poste de travail.</h4>
-                        <p></p>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Nature du projet :</h5>
+                        <p>Exploitation de conteneurs Docker "utilitaires et création d'un Workflow chaînant ces conteneurs. 
+                        L'objectif étant la mise en place de briques logicielles s'intégrant à un environnement de développement complexe. 
+                        Ces briques logicielles conteneurisées forment un mécanisme quasi-automatique redéployable, à peu de frais (temps et compétences), 
+                        ultérieurement et/ou par d'autres développeurs.
+                        </p>
+                        <br>
+                        <h5>Objectif :</h5>
+                        <p>Le projet permet de générer des pdf, en gérant différentes conversions notamment d'images ainsi que des fichiers types csv, et ce en automatisant le tout au final en une commande. 
+                        L'objectif étant de se familiariser avec diverses requêtes bash et/ou php (et Docker en général).
+                        </p>
+                        <br>
+                        <h5>Etapes de conception :</h5>
+                        <p>- Suivis du projet dans un Google Doc pour en faire un rendu pdf.</p>
+                        <p>- Réalisation des différents scripts pour, à la fin, les regrouper dans un seul fichier d'exécution (automatisation).</p>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="service-box project-card">
+                    <div class="service-info" onclick="toggleProjectDetails(this)">
+                        <img src="assets/image/bdd.png" alt="Image du projet">
                         <h4>S1.04   :   Concevoir et mettre en place une base de données à partir d'un cahier des charges client.</h4>
-                        <p></p>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Nature du projet :</h5>
+                        <p>Réalisation d'une base de données en SQL, notamment critiquer la modélisation et la mise en oeuvre d'une base de données. 
+                        Passez du modèle relationnel au modèle conceptuel (diagramme de classe) et savoir créer ainsi que peupler une classe le tout sur la base d'un sujet (cahier des charges fourni).
+                        </p>
+                        <br>
+                        <h5>Objectif :</h5>
+                        <p>Etre capable de modéliser une classe, implémenter des contraintes, identifier les dépendances et migrer une base d'un schéma à un autre.
+                        </p>
+                        <br>
+                        <h5>Etapes de réalisation :</h5>
+                        <p>- Analyse et critique de la base de données tout en proposant un nouveau modèle.</p>
+                        <p>- Transformer notre diagramme UML en script SQL.</p>
+                        <p>- Peupler les classes réalisées.</p>
+                        <br><br><br><br><br><br><br><br><br><br>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
+                <div class="service-box project-card">
+                    <div class="service-info" onclick="toggleProjectDetails(this)">
+                        <img src="assets/image/web.png" alt="Image du projet">
                         <h4>S1.05   :   Identifier les besoins métiers des clients et des utilisateurs.</h4>
-                        <p></p>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Nature du projet :</h5>
+                        <p>Réalisation en html, css avec utilisation des médias querys d'un site vitrine des Jeux olympiques (ciblé sur un sport en particulier).
+                        </p>
+                        <br>
+                        <h5>Objectif :</h5>
+                        <p>Passez par les différentes étapes de réalisation d'un site, de l'expression des besoins du client à la conception même.
+                        </p>
+                        <br>
+                        <h5>Etapes de réalisation :</h5>
+                        <p>- Organiser son équipe (répartition du travail, rôles...).</p>
+                        <p>- Compréhension et rédaction des besoins.</p>
+                        <p>- Réalisation de l'arborescence (GlooMaps).</p>
+                        <p>- Création de la charte graphique et maquettage sur Figma.</p>
+                        <p>- Réalisation des pages web responsive.</p>
+                        <br><br><br><br><br><br><br><br><br><br>
                     </div>
                 </div>
 
-                <div class="service-box">
-                    <div class="service-info">
-                        <h4>S1.05   :   Identifier ses aptitudes pour travailler dans une équipe.</h4>
-                        <p></p>
+                <div class="service-box project-card">
+                    <div class="service-info" onclick="toggleProjectDetails(this)">
+                        <img src="assets/image/shell.png" alt="Image du projet">
+                        <h4>S1.06   :   Identifier ses aptitudes pour travailer dans une équipe</h4>
+                        <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                    </div>
+                    <div class="project-details">
+                        <h5>Nature du projet :</h5>
+                        <p>Choisir une organisation pour laquelle on effectue des recherches
+                        pour la présenter dans sa dimension économique (grille des caractéristiques de
+                        l’organisation et diagnostic externe) et dans ce qui relève de la RSE, avec un focus particulier sur
+                        les moyens qu'elle met en œuvre pour réduire son empreinte écologique du numérique.
+                        </p>
+                        <br>
+                        <h5>Objectif :</h5>
+                        <p>Savoir organiser un travail d'équipe et répartir des tâches en utilisant des outils. 
+                        Cerner un sujet et l'analyser (comprendre une problématique) et collecter des inforamtions ainsi que rédiger une synthèse sur le dit sujet.
+                        </p>
+                        <br>
+                        <h5>Etapes de réalisation :</h5>
+                        <p>- Organisation du travail d'équipe et sa recherche documentaire.</p>
+                        <p>- Préparer une synthèse écrite ainsi qu'une présentation orale sur Canva.</p>
+                        <br><br><br><br><br><br><br><br><br><br>
                     </div>
                 </div>
             </div>
@@ -181,6 +283,13 @@
                         <div class="info">
                             <i class="fas fa-database" style="font-size: 60px; color: #336791;"></i>
                             <span>MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="bar animate__animated animate__zoomIn animate__delay-2s">
+                        <div class="info">
+                            <img src="assets/image/visual.png"/>
+                            <span>Visual Paradigm</span>
                         </div>
                     </div>
 
