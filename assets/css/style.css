@@ -230,7 +230,7 @@ span {
 }
 
 .typing-text span::before {
-    content: "en recherche d'alternance";
+    content: "alternante chez SIMICAR";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -254,7 +254,7 @@ span {
 
 @keyframes words {
     0%, 20% {
-        content: "en recherche d'alternance";
+        content: "alternante chez SIMICAR";
     }
     21%, 40% {
         content: "une Développeuse Logiciels";
@@ -1048,3 +1048,4 @@ span {
         grid-template-columns: repeat(2,1fr);
     }
 }
+
