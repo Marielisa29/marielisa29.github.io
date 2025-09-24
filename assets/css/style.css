@@ -257,7 +257,7 @@ span {
         content: "alternante chez SIMICAR";
     }
     21%, 40% {
-        content: "une Développeuse Logiciels";
+        content: "une Développeuse Logiciel";
     }
     41%, 60%{
         content: "une Développeuse Web";
@@ -1048,4 +1048,5 @@ span {
         grid-template-columns: repeat(2,1fr);
     }
 }
+
 
